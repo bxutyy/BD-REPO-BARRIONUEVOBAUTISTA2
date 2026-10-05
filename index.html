@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Perfiles | Administrador</title>
+
+
+<link rel="stylesheet" href="style.css">
+
+
+<link 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="fondo"></div>
+
+
+
+
+<aside class="sidebar">
+
+
+<img src="img/logo.png" class="logo">
+
+
+<h2>The Bull</h2>
+
+<p>Administrador</p>
+
+
+
+
+<nav>
+
+
+<a>
+<i class="fa-solid fa-house"></i>
+Inicio
+</a>
+
+
+
+<a>
+<i class="fa-solid fa-users"></i>
+Usuarios
+</a>
+
+
+
+<a class="activo">
+
+<i class="fa-solid fa-user"></i>
+
+Perfiles
+
+</a>
+
+
+
+<a>
+<i class="fa-solid fa-database"></i>
+Base de datos
+</a>
+
+
+
+
+<a>
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Cerrar sesión
+
+</a>
+
+
+
+</nav>
+
+
+</aside>
+
+
+
+
+
+
+<header>
+
+
+
+<div class="filtros">
+
+
+<button class="seleccionado"
+onclick="cambiarFiltro('todos')">
+
+Todos
+
+</button>
+
+
+
+<button onclick="cambiarFiltro('participante')">
+
+Participantes
+
+</button>
+
+
+
+<button onclick="cambiarFiltro('organizador')">
+
+Organizadores
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="usuario">
+
+
+<img src="img/perfil1.jpg">
+
+
+
+<div>
+
+<b>Bauti</b>
+
+<small>
+Administrador
+</small>
+
+</div>
+
+
+<i class="fa-solid fa-chevron-down"></i>
+
+
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+
+
+
+
+<main>
+
+
+
+<h1>
+
+Gestión de perfiles
+
+</h1>
+
+
+<p>
+
+Administra los usuarios registrados en P.A.D.E.L
+
+</p>
+
+
+
+
+
+
+
+<div class="buscador">
+
+
+<i class="fa-solid fa-search"></i>
+
+
+<input 
+
+id="buscar"
+
+placeholder="Buscar usuario..."
+
+onkeyup="buscarUsuario()"
+
+>
+
+
+
+</div>
+
+
+
+
+
+
+<section id="resultados">
+
+
+</section>
+
+
+
+
+
+
+</main>
+
+
+
+
+<script src="scripts.js"></script>
+
+
+
+</body>
+
+
+</html>
